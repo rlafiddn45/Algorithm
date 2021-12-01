@@ -1,11 +1,12 @@
 def solution(phone_book):
-    for i in range(len(phone_book)):
-        x = phone_book[i]
-        for j in range(i + 1, len(phone_book)):
-            y = phone_book[j]
-            if x[0] != y[0] or len(x) > len(y):
-                break
-            if x == y[:len(x)]:
+    hash_book = {}
+    for phone in phone_book:
+        hash_book[phone] = 1
+    for phone in phone_book:
+        temp = ''
+        for p in phone:
+            temp += p
+            if temp in hash_book and temp != phone:
                 return False
     return True
 
