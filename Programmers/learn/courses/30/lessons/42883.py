@@ -7,10 +7,8 @@ def solution(number, k):
             while answer and answer[-1] < num and cnt + idx < k:
                 answer.pop()
                 idx += 1
-            answer.append(num)
             cnt += idx
-        else:
-            answer.append(num)
+        answer.append(num)
     if cnt < k:
         for _ in range(k - cnt):
             answer.pop()
