@@ -46,5 +46,7 @@ def solution(relation):
 # print(solution([["ryan", "music", "1"], ["ryan", "math", "2"], ["apeach", "music", "2"]]))
 print(solution([["a", "1", "aaa", "c", "ng"], ["a", "1", "bbb", "e", "g"],
                 ["c", "1", "aaa", "d", "ng"], ["d", "2", "bbb", "d", "ng"]]))
-print(solution([['a',1,'aaa','c','ng'],['b',1,'bbb','c','g'],['c',1,'aaa','d','ng'],['d',2,'bbb','d','ng']]))
+print(solution([['a', '1', 'aaa', 'c', 'ng'], ['b', '1', 'bbb', 'c', 'g'],
+                ['c', '1', 'aaa', 'd','ng'], ['d', '2', 'bbb', 'd', 'ng']]))
 
+# 최소성 만족시키는게 중요하다!!!!!!!
